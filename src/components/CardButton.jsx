@@ -8,9 +8,9 @@ function CardButton({ title, price, description, background, link }) {
       onClick={() => navigate(link)}
     >
       <div className='buttons__inside'>
-        <p className='text2'>{title}</p>
+        <p className='text2 button__title'>{title}</p>
         {}
-        <p className='text2 price'>от {price} €</p>
+        <p className='text2 price'>{price} €</p>
       </div>
       
       <div className='button__description'>
