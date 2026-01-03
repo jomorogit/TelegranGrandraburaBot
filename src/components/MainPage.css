@@ -8,7 +8,7 @@
 .MainPage__container{
     height: 100%;
     width: 440px;
-    margin-top: 1%;
+    margin-top: 2%;
     padding-left: 30px;
     padding-right: 30px;
 }
@@ -23,8 +23,6 @@
     text-align: left;
     margin-bottom: 30px;
 }
-
-
 
 .text2{
     color: white;

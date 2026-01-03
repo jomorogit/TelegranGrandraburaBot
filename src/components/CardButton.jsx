@@ -1,8 +1,11 @@
-function CardButton({ title, price, description, background }) {
+import { useNavigate } from 'react-router-dom';
+function CardButton({ title, price, description, background, link }) {
+  const navigate = useNavigate();
   return (
     <button 
       className='button__consult buttons'
       style={{ background: background }} 
+      onClick={() => navigate(link)}
     >
       <div className='buttons__inside'>
         <p className='text2'>{title}</p>
