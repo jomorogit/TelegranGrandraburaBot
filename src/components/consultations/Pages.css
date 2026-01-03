@@ -1,5 +1,5 @@
 .text-accent {
-    color: #00c3ff; /* Или любой твой акцентный цвет */
+    color: #db5fb6; /* Или любой твой акцентный цвет */
     font-family: 'Onest', sans-serif;
     font-weight: 600;
     font-size: 18px;
@@ -16,9 +16,12 @@
 
 /* Контейнер для всей страницы */
 .page-container {
+    height: auto;
     padding: 20px;
-    background: #2f0139; /* Цвет фона твоего приложения */
-    min-height: 100vh;
+    /* background: #26002e;  */
+  background: linear-gradient(135deg, #26002e 0%, #1c132b 100%);
+   
+    border-radius: 30px;
 }
 
 /* Кнопка заказа */
