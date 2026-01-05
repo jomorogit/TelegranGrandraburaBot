@@ -1,5 +1,6 @@
+import { useEffect } from 'react'; // <--- 1. ДОБАВЬ ЭТОТ ИМПОРТ
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
-import MainPage from './components/MainPage'; // Путь к твоей главной
+import MainPage from './components/MainPage'; 
 import Consultations from './components/consultations/Consultations.jsx';
 import PersonalityPage from './components/consultations/PersonalityPage.jsx';
 import DestinyPage from './components/consultations/DestinyPage.jsx';
@@ -7,8 +8,9 @@ import CompatibilityPage from './components/consultations/CompatibilityPage.jsx'
 import TrianglePage from './components/consultations/TrianglePage.jsx';
 import RelocationPage from './components/consultations/RelocationPage.jsx';
 import EnergyCheckPage from './components/consultations/EnergyCheckPage.jsx';
+import WebApp from '@twa-dev/sdk'; // Ты уже импортировал это, отлично
 
-// Импорты курсов (папка components/courses)
+// Импорты курсов
 import CoursesPage from './components/courses/CoursesPage.jsx';
 import SelfDiscoveryPage from './components/courses/SelfDiscoveryPage.jsx';
 import DestinyCoursePage from './components/courses/DestinyCoursePage.jsx';
@@ -18,12 +20,22 @@ import CompatibilityCoursePage from './components/courses/CompatibilityCoursePag
 import BodyNumbersPage from './components/courses/BodyNumbersPage.jsx';
 import TarotPage from './components/courses/TarotPage.jsx';
 
-// Импорты астрологических прогнозов с учетом твоей архитектуры
+// Импорты астрологических прогнозов
 import NatalChartPage from './components/natalChartPage/NatalChartPage.jsx';
 import SolarPage from './components/solarPage/SolarPage.jsx';
 import YearForecastPage from './components/yearForecastPage/YearForecastPage.jsx';
 
 function App() {
+  
+  // <--- 2. ВСТАВЬ ЭТОТ БЛОК КОДА СЮДА
+  useEffect(() => {
+    // Сообщаем Телеграму, что приложение готово
+    WebApp.ready();
+    // Раскрываем на полный экран (по желанию, но выглядит круче)
+    WebApp.expand(); 
+  }, []);
+  // ------------------------------------
+
   return (
     <Router>
       <Routes>
@@ -48,7 +60,7 @@ function App() {
               <Route path="/body-numbers" element={<BodyNumbersPage />} />
               <Route path="/tarot" element={<TarotPage />} />
 
-             
+              
               <Route path="/natal-chart" element={<NatalChartPage />} />
               <Route path="/solar" element={<SolarPage />} />
               <Route path="/year-forecast" element={<YearForecastPage />} />
