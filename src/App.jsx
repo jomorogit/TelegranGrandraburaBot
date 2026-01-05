@@ -26,7 +26,7 @@ import SolarPage from './components/solarPage/SolarPage.jsx';
 import YearForecastPage from './components/yearForecastPage/YearForecastPage.jsx';
 
 function App() {
-  
+ 
   // <--- 2. ВСТАВЬ ЭТОТ БЛОК КОДА СЮДА
   useEffect(() => {
     // Сообщаем Телеграму, что приложение готово
