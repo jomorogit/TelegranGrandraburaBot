@@ -4,5 +4,5 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/TelegranGrandraburaBot/',
+  // base: '/...' <-- ЭТУ СТРОКУ МЫ УБРАЛИ, ОНА БОЛЬШЕ НЕ НУЖНА
 })
