@@ -1,16 +1,11 @@
 export default function TrianglePage(){
 
-    // Функция обработки клика
+   
 const handleBuy = (productId) => {
-    // Проверяем, доступен ли Telegram WebApp
     if (window.Telegram && window.Telegram.WebApp) {
-        
-        // Формируем данные. Важно: ключи должны совпадать с python-ботом!
         const data = {
-            id: productId  // Например, 1, 2 или 55
+            id: productId 
         };
-
-        // Отправляем данные боту в виде строки
         window.Telegram.WebApp.sendData(JSON.stringify(data));
     } else {
         console.log("Telegram WebApp не найден (открыто не в боте?)");
@@ -55,7 +50,7 @@ const handleBuy = (productId) => {
                 </div>
                 
                 <button className="order-button"
-                onClick={() => handleBuy(1)}
+                onClick={() => handleBuy(4)}
                 >Найти свой путь 🧭</button>
             </div>
         </div>

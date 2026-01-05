@@ -1,4 +1,15 @@
 export default function RelocationPage(){
+    const handleBuy = (productId) => {
+    if (window.Telegram && window.Telegram.WebApp) {
+        const data = {
+            id: productId 
+        };
+        window.Telegram.WebApp.sendData(JSON.stringify(data));
+    } else {
+        console.log("Telegram WebApp не найден (открыто не в боте?)");
+    }
+};
+
     return(
         <div className="MainPage">
             <div className='MainPage__container'>
@@ -34,7 +45,9 @@ export default function RelocationPage(){
                     <p className="text-accent">Стоимость: 70 € 💶</p>
                 </div>
                 
-                <button className="order-button">Выбрать лучший маршрут ✈️</button>
+                <button className="order-button"
+                onClick={() => handleBuy(5)}
+                >Выбрать лучший маршрут ✈️</button>
             </div>
         </div>
               

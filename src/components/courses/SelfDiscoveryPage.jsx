@@ -1,4 +1,14 @@
 export default function SelfDiscoveryPage(){
+    const handleBuy = (productId) => {
+    if (window.Telegram && window.Telegram.WebApp) {
+        const data = {
+            id: productId 
+        };
+        window.Telegram.WebApp.sendData(JSON.stringify(data));
+    } else {
+        console.log("Telegram WebApp не найден (открыто не в боте?)");
+    }
+};
     return(
          <div className="MainPage">
             <div className='MainPage__container'>
@@ -48,7 +58,9 @@ export default function SelfDiscoveryPage(){
                     <p className="text-accent">Стоимость: 150 € 💶</p>
                 </div>
                 
-                <button className="order-button">Начать путешествие к себе 🌀</button>
+                <button className="order-button"
+                onClick={() => handleBuy(7)}
+                >Начать путешествие к себе 🌀</button>
             </div>
         </div>
             </div>

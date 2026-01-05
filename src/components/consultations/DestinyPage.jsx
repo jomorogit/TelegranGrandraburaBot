@@ -1,4 +1,14 @@
 export default function DestinyPage(){
+      const handleBuy = (productId) => {
+    if (window.Telegram && window.Telegram.WebApp) {
+        const data = {
+            id: productId 
+        };
+        window.Telegram.WebApp.sendData(JSON.stringify(data));
+    } else {
+        console.log("Telegram WebApp не найден (открыто не в боте?)");
+    }
+};
     return(
          <div className="MainPage">
             <div className='MainPage__container'>
@@ -45,7 +55,9 @@ export default function DestinyPage(){
                     <p className="text-accent">Стоимость: 150 € 💶</p>
                 </div>
                 
-                <button className="order-button">Открыть денежный канал 💳</button>
+                <button className="order-button"
+                 onClick={() => handleBuy(2)}
+                >Открыть денежный канал 💳</button>
             </div>
         </div>
 

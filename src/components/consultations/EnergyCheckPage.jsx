@@ -1,4 +1,14 @@
 export default function EnergyCheckPage(){
+      const handleBuy = (productId) => {
+    if (window.Telegram && window.Telegram.WebApp) {
+        const data = {
+            id: productId 
+        };
+        window.Telegram.WebApp.sendData(JSON.stringify(data));
+    } else {
+        console.log("Telegram WebApp не найден (открыто не в боте?)");
+    }
+};
     return(
         <div className="MainPage">
             <div className='MainPage__container'>
@@ -26,7 +36,9 @@ export default function EnergyCheckPage(){
                     <p className="text-accent">Стоимость: 80 € 💶</p>
                 </div>
                 
-                <button className="order-button">Вернуть свою силу 👺</button>
+                <button className="order-button"
+                 onClick={() => handleBuy(6)}
+                >Вернуть свою силу 👺</button>
             </div>
         </div>
               

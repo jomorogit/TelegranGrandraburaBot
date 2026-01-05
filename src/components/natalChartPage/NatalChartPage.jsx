@@ -1,4 +1,14 @@
 export default function NatalChartPage(){
+     const handleBuy = (productId) => {
+    if (window.Telegram && window.Telegram.WebApp) {
+        const data = {
+            id: productId 
+        };
+        window.Telegram.WebApp.sendData(JSON.stringify(data));
+    } else {
+        console.log("Telegram WebApp не найден (открыто не в боте?)");
+    }
+};
     return(
         <div className="MainPage">
             <div className='MainPage__container'>
@@ -55,7 +65,9 @@ export default function NatalChartPage(){
                     <p className="text-accent">Стоимость: 100 € 💶</p>
                 </div>
                 
-                <button className="order-button">Заказать натальную карту 🌌</button>
+                <button className="order-button"
+                onClick={() => handleBuy(14)}
+                >Заказать натальную карту 🌌</button>
             </div>
         </div>
             

@@ -1,4 +1,14 @@
 export default function YearForecastPage(){
+     const handleBuy = (productId) => {
+    if (window.Telegram && window.Telegram.WebApp) {
+        const data = {
+            id: productId 
+        };
+        window.Telegram.WebApp.sendData(JSON.stringify(data));
+    } else {
+        console.log("Telegram WebApp не найден (открыто не в боте?)");
+    }
+};
     return(
         <div className="MainPage">
             <div className='MainPage__container'>
@@ -63,7 +73,9 @@ export default function YearForecastPage(){
                     <p className="text-accent">Стоимость: 150 € 💶</p>
                 </div>
                 
-                <button className="order-button">Получить послание на год 📅</button>
+                <button className="order-button"
+                onClick={() => handleBuy(16)}
+                >Получить послание на год 📅</button>
             </div>
         </div>
             </div>

@@ -1,4 +1,14 @@
 export default function PersonalityPage(){
+      const handleBuy = (productId) => {
+    if (window.Telegram && window.Telegram.WebApp) {
+        const data = {
+            id: productId 
+        };
+        window.Telegram.WebApp.sendData(JSON.stringify(data));
+    } else {
+        console.log("Telegram WebApp не найден (открыто не в боте?)");
+    }
+};
     return(
          <div className="MainPage">
             <div className='MainPage__container'>
@@ -52,7 +62,9 @@ export default function PersonalityPage(){
                     <p className="text3">Необходимо: дата рождения 📅</p>
                 </div>
                 
-                <button className="order-button">Заказать 💳</button>
+                <button className="order-button"
+                 onClick={() => handleBuy(1)}
+                 >Заказать 💳</button>
             </div>
         </div>              
             </div>
