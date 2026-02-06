@@ -16,7 +16,7 @@ export default function Consultations(){
                 />
                  <CardButton
                     title="💸Предназначение и Большие деньги"
-                    price="150"
+                    price="200"
                     description="Разбор вашей ситуации за 1 час."
                     background="linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(33, 37, 72, 0.2) 0.01%, rgba(0, 0, 0, 0.2) 27.4%, rgba(0, 195, 255, 0.2) 85.1%), linear-gradient(90deg, rgba(0, 0, 0, 0) 43.27%, rgba(0, 195, 255, 0.2) 100%), #3F1283"
                     link="/destiny"
