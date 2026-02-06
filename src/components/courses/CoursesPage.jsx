@@ -10,7 +10,7 @@ export default function CoursesPage(){
                 <CardButton
                     title="🌀Я — это больше, чем кажется"
                     price="150"
-                    description="Разбор вашей ситуации за 1 час."
+                    description=""
                     background="linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(33, 37, 72, 0.2) 0.01%, rgba(0, 0, 0, 0.2) 27.4%, rgba(0, 195, 255, 0.2) 85.1%), linear-gradient(90deg, rgba(0, 0, 0, 0) 43.27%, rgba(0, 195, 255, 0.2) 100%), #83125F"
                     link="/self-discovery"
                 />
@@ -18,7 +18,7 @@ export default function CoursesPage(){
                  <CardButton
                     title="🎯Как найти своё Предназначение"
                     price="150"
-                    description="Разбор вашей ситуации за 1 час."
+                    description=""
                     background="linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(33, 37, 72, 0.2) 0.01%, rgba(0, 0, 0, 0.2) 27.4%, rgba(0, 195, 255, 0.2) 85.1%), linear-gradient(90deg, rgba(0, 0, 0, 0) 43.27%, rgba(0, 195, 255, 0.2) 100%), #83125F"
                     link="/destiny-course"
                 />
@@ -26,7 +26,7 @@ export default function CoursesPage(){
                  <CardButton
                     title="🌳Как войти в Силу Рода"
                     price="150"
-                    description="Разбор вашей ситуации за 1 час."
+                    description=""
                     background="linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(33, 37, 72, 0.2) 0.01%, rgba(0, 0, 0, 0.2) 27.4%, rgba(0, 195, 255, 0.2) 85.1%), linear-gradient(90deg, rgba(0, 0, 0, 0) 43.27%, rgba(0, 195, 255, 0.2) 100%), #83125F"
                     link="/ancestry"
                 />
@@ -34,7 +34,7 @@ export default function CoursesPage(){
                  <CardButton
                     title="💞Любовь, ты где?"
                     price="150"
-                    description="Разбор вашей ситуации за 1 час."
+                    description=""
                     background="linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(33, 37, 72, 0.2) 0.01%, rgba(0, 0, 0, 0.2) 27.4%, rgba(0, 195, 255, 0.2) 85.1%), linear-gradient(90deg, rgba(0, 0, 0, 0) 43.27%, rgba(0, 195, 255, 0.2) 100%), #83125F"
                     link="/find-love"
                 />
@@ -42,7 +42,7 @@ export default function CoursesPage(){
                  <CardButton
                     title="🔗Совместимость и Смысл Встречи"
                     price="150"
-                    description="Разбор вашей ситуации за 1 час."
+                    description=""
                     background="linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(33, 37, 72, 0.2) 0.01%, rgba(0, 0, 0, 0.2) 27.4%, rgba(0, 195, 255, 0.2) 85.1%), linear-gradient(90deg, rgba(0, 0, 0, 0) 43.27%, rgba(0, 195, 255, 0.2) 100%), #83125F"
                     link="/compatibility-course"
                 />
@@ -50,7 +50,7 @@ export default function CoursesPage(){
                 <CardButton
                     title="🔢Цифры тела"
                     price="150"
-                    description="Разбор вашей ситуации за 1 час."
+                    description=""
                     background="linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(33, 37, 72, 0.2) 0.01%, rgba(0, 0, 0, 0.2) 27.4%, rgba(0, 195, 255, 0.2) 85.1%), linear-gradient(90deg, rgba(0, 0, 0, 0) 43.27%, rgba(0, 195, 255, 0.2) 100%), #83125F"
                     link="/body-numbers"
                 />
@@ -58,7 +58,7 @@ export default function CoursesPage(){
                 <CardButton
                     title="🔮Таро с нуля до профи"
                     price="100"
-                    description="Разбор вашей ситуации за 1 час."
+                    description=""
                     background="linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(33, 37, 72, 0.2) 0.01%, rgba(0, 0, 0, 0.2) 27.4%, rgba(0, 195, 255, 0.2) 85.1%), linear-gradient(90deg, rgba(0, 0, 0, 0) 43.27%, rgba(0, 195, 255, 0.2) 100%), #83125F"
                     link="/tarot"
                 />
