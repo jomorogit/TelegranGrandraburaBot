@@ -52,7 +52,7 @@ export default function DestinyPage(){
                 </p>
 
                 <div className="price-block">
-                    <p className="text-accent">Стоимость: 200 € 💶</p>
+                    <p className="text-accent">Стоимость: 150 € 💶</p>
                 </div>
                 
                 <button className="order-button"
